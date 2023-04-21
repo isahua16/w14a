@@ -9,6 +9,7 @@
 import axios from 'axios';
     export default {
         methods: {
+            //Make a get request on a click event and store response into a variable that gets emitted.
             fetch_joke: function() {
                 axios.request({
                     url: `https://ron-swanson-quotes.herokuapp.com/v2/quotes`
