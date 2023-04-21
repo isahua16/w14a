@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <get-joke></get-joke>
-    <loud-joke></loud-joke>
+    <normal-joke-button></normal-joke-button>
+    <loud-joke-button></loud-joke-button>
+    <snake-joke-button></snake-joke-button>
     <display-joke></display-joke>
   </div>
 </template>
@@ -9,15 +11,18 @@
 <script>
 import DisplayJoke from '@/components/DisplayJoke.vue'
 import GetJoke from '@/components/GetJokeButton.vue'
-import LoudJoke from '@/components/LoudJokeButton.vue'
+import NormalJokeButton from '@/components/NormalJokeButton.vue'
+import LoudJokeButton from '@/components/LoudJokeButton.vue'
+import SnakeJokeButton from '@/components/SnakeJokeButton.vue'
 
 export default {
   name: 'App',
   components: {
     DisplayJoke,
     GetJoke,
-    LoudJoke
-
+    NormalJokeButton,
+    LoudJokeButton,
+    SnakeJokeButton
   }
 }
 </script>
